@@ -1,0 +1,66 @@
+rules_version = '2';
+
+// SIRA — Firestore Security Rules (project: sira-20fae)
+//
+// Strategy: default deny. ALL business writes go through the server with the Firebase Admin SDK
+// (which bypasses these rules after the server has verified the admin's role). So no client may
+// create, update or delete anything here. Clients may only READ the public catalog, and only
+// documents that are active. Sensitive collections are not readable from the browser at all.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Roles come ONLY from Auth custom claims, never from a Firestore field.
+    function role() { return request.auth != null && 'role' in request.auth.token ? request.auth.token.role : null; }
+    function isStaff() { return role() in ['super_admin', 'admin', 'editor']; }
+
+    // ── public catalog (read-only for everyone, active documents only) ──
+    match /serviceCategories/{id} {
+      allow read: if resource.data.active == true || isStaff();
+      allow write: if false;
+    }
+    match /services/{id} {
+      allow read: if resource.data.active == true || isStaff();
+      allow write: if false;
+    }
+    match /packages/{id} {
+      allow read: if resource.data.active == true || isStaff();
+      allow write: if false;
+    }
+    match /pricingOptions/{id} {
+      allow read: if resource.data.active == true || isStaff();
+      allow write: if false;
+    }
+    match /portfolio/{id} {
+      allow read: if resource.data.active == true || isStaff();
+      allow write: if false;
+    }
+    match /reviews/{id} {
+      allow read: if resource.data.approved == true || isStaff();
+      allow write: if false;
+    }
+
+    // ── public configuration documents ──
+    match /settings/site { allow read: if true; allow write: if false; }
+    match /builderConfig/{id} { allow read: if true; allow write: if false; }
+    match /meta/{id} { allow read: if true; allow write: if false; }
+
+    // ── never readable or writable from the browser ──
+    match /settings/private { allow read, write: if false; }
+    match /discounts/{id} { allow read, write: if false; }
+    match /coupons/{id} { allow read, write: if false; }   // validated on the server only
+    match /auditLog/{id} { allow read, write: if false; }  // shown to super_admin by the server
+
+    // ── orders: created and read through the server in a later phase ──
+    match /orders/{id} { allow read, write: if false; }
+
+    // ── user profiles: a signed-in user may read their own; writes go through the server.
+    //    There is deliberately NO role field here. ──
+    match /users/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    // Anything not listed above stays closed.
+    match /{document=**} { allow read, write: if false; }
+  }
+}

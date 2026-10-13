@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "title": "Professional content production for teachers",
+    "description": "A content studio for teachers and educational creators in Egypt: photography, video production, editing and design. Pick a ready package or build your own."
+  },
+  "common": {
+    "skip": "Skip to content",
+    "menu": "Main menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchLanguage": "Switch language",
+    "whatsapp": "WhatsApp",
+    "whatsappCta": "Chat with us on WhatsApp",
+    "location": "Location"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "packages": "Packages",
+    "build": "Build your package",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "whatsapp": {
+    "general": "Hello, I'd like to ask about the studio's services.",
+    "packages": "Hello, I'd like to know about the available packages.",
+    "custom": "Hello, I'd like to build a custom package for my content.",
+    "help": "Hello, I need help choosing the right package.",
+    "services": "Hello, I'd like to ask about a specific service."
+  },
+  "hero": {
+    "eyebrow": "Content studio for teachers",
+    "title": "Professional content",
+    "highlight": "made for teachers",
+    "description": "Photography, video production, editing and design for your lectures and channels. Choose a ready package or build your own.",
+    "packages": "View packages",
+    "build": "Build your own package",
+    "services": "Explore our services",
+    "point1": "Clear pricing before you order",
+    "point2": "Only pay for what you need",
+    "point3": "Talk to us directly on WhatsApp"
+  },
+  "home": {
+    "servicesTitle": "Everything a teacher needs, in one place",
+    "servicesText": "From filming your lectures to designing your thumbnails.",
+    "optionsTitle": "Two easy ways to start",
+    "readyTitle": "Ready-made packages",
+    "readyText": "A quick choice if you want to get started without overthinking.",
+    "readyCta": "Browse packages",
+    "buildTitle": "Build your own package",
+    "buildText": "Pick the number of lectures, designs and editing you need, and the price is calculated for you.",
+    "buildCta": "Start building",
+    "processTitle": "How it works",
+    "steps": {
+      "choose": {
+        "title": "Choose",
+        "text": "Pick a ready package or build your own."
+      },
+      "order": {
+        "title": "Send your request",
+        "text": "Tell us what you need and when."
+      },
+      "confirm": {
+        "title": "Confirm on WhatsApp",
+        "text": "We review the details with you and confirm the price and date."
+      },
+      "deliver": {
+        "title": "We film and deliver",
+        "text": "We produce, edit, and send you the final files."
+      }
+    },
+    "ctaTitle": "Not sure what suits you?",
+    "ctaText": "Message us on WhatsApp and we'll help you choose."
+  },
+  "services": {
+    "title": "Our services",
+    "description": "Photography, video, editing and design: everything your teaching content needs.",
+    "note": "Prices depend on the service and quantity. Message us, or build your own package to see the price.",
+    "ctaTitle": "Need a specific service?",
+    "ctaText": "Tell us what you need and we'll recommend the right option.",
+    "emptyCatalog": "Our services will appear here soon."
+  },
+  "packages": {
+    "title": "Packages",
+    "description": "Ready-made packages for teachers with a clear scope and price.",
+    "emptyTitle": "Ready packages are being prepared",
+    "emptyText": "We'll list them here with their prices as soon as they're ready. Meanwhile you can build your own package or ask us on WhatsApp.",
+    "canInclude": "A package can include",
+    "choose": "Choose this package",
+    "orderMessage": "Hello, I'd like to order the {name} package.",
+    "buildCta": "Build your own package"
+  },
+  "builder": {
+    "title": "Build your own package",
+    "description": "Choose exactly what you need and watch the price add up.",
+    "soonTitle": "This tool is almost ready",
+    "soonText": "Soon you'll choose your quantities and options here and see the total instantly. Prices are managed by the studio, so they're always up to date.",
+    "youWillChoose": "You'll be able to choose",
+    "options": {
+      "lectures": "Number of lectures",
+      "quality": "Video quality (Full HD or 4K)",
+      "cameras": "Number of cameras",
+      "editing": "Editing level",
+      "thumbnails": "YouTube thumbnails",
+      "social": "Social media designs",
+      "shorts": "Shorts and Reels",
+      "subtitles": "Subtitles",
+      "motion": "Motion graphics"
+    },
+    "meanwhile": "Meanwhile, tell us what you need on WhatsApp and we'll prepare a quote.",
+    "live": {
+      "servicesTitle": "Services",
+      "optionsTitle": "Options & add-ons",
+      "quantity": "Quantity",
+      "none": "None",
+      "estimateTitle": "Your package",
+      "empty": "Choose a quantity for any service and the price will appear here.",
+      "subtotal": "Subtotal",
+      "discount": "Discount",
+      "total": "Estimated total",
+      "estimateNote": "This is an estimate. The final price is verified by our system before we start.",
+      "verify": "Confirm price",
+      "verifying": "Confirming...",
+      "verified": "Price confirmed by our system",
+      "sendWhatsapp": "Send the request on WhatsApp",
+      "changed": "The price was updated. Review the summary and confirm again.",
+      "verifyError": "We could not confirm the price right now. Please try again.",
+      "required": "Required",
+      "min": "Minimum",
+      "max": "Maximum",
+      "minTotal": "Minimum total for a custom package: {amount}",
+      "issue": "Please review your choices: something is not valid.",
+      "reset": "Clear selection",
+      "message": "Hello, I would like to order a custom package:",
+      "messageTotal": "Confirmed total: {amount}"
+    }
+  },
+  "portfolio": {
+    "title": "Our work",
+    "description": "Examples of our work with teachers and educational creators.",
+    "emptyTitle": "Our portfolio is on its way",
+    "emptyText": "We're preparing real examples of our work. Check back soon, or ask us on WhatsApp.",
+    "categoriesTitle": "Categories",
+    "categories": {
+      "photography": "Photography",
+      "video": "Video",
+      "editing": "Editing",
+      "thumbnails": "Thumbnails",
+      "social": "Social media designs",
+      "educational": "Educational content"
+    }
+  },
+  "contact": {
+    "title": "Contact us",
+    "description": "WhatsApp is the fastest way to reach us. Or fill in the form and we'll open WhatsApp with your message ready.",
+    "whatsappTitle": "Fastest way to reach us",
+    "locationTitle": "Studio location",
+    "formTitle": "Send your request",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "phone": "Mobile number (optional)",
+    "phonePlaceholder": "01xxxxxxxxx",
+    "service": "Service you need",
+    "serviceAny": "Not sure / general inquiry",
+    "message": "Request details",
+    "messagePlaceholder": "Tell us briefly what you need",
+    "submit": "Send via WhatsApp",
+    "hint": "WhatsApp will open with your message ready. Just press send.",
+    "errors": {
+      "nameRequired": "Please enter your name",
+      "phoneInvalid": "Please enter a valid Egyptian mobile number",
+      "messageRequired": "Please tell us briefly what you need"
+    },
+    "msg": {
+      "greeting": "Hello, I'm {name}.",
+      "service": "Service: {service}",
+      "phone": "Mobile: {phone}"
+    }
+  },
+  "footer": {
+    "tagline": "A content production studio for teachers and educational creators.",
+    "explore": "Explore",
+    "contact": "Contact",
+    "rights": "© {year} {name}. All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "This link may be wrong, or the page was moved.",
+    "back": "Back to home"
+  }
+}

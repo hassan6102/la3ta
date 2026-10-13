@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-canvas: #121212;
+  --color-surface: #1b1b1b;
+  --color-surface-2: #242424;
+  --color-line: #343434;
+  --color-ink: #f5f5f5;
+  --color-ink-soft: #c6c6c6;
+  --color-brand: #a6ce39;
+  --color-brand-hover: #b9df4d;
+  --color-brand-ink: #121212;
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #3be07a;
+  --font-sans: var(--font-cairo), 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background: var(--color-canvas);
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    overflow-x: clip;
+  }
+  /* Arabic needs generous line-height and no negative tracking. */
+  h1,
+  h2,
+  h3 {
+    font-weight: 800;
+    line-height: 1.35;
+    letter-spacing: 0;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: var(--color-brand-ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
